@@ -7,7 +7,7 @@ des = "/home/abhi/backup"
 
 def getDate(file_name):
     date = os.path.getmtime(file_name)
-    return datetime.datetime.fromtimestamp(date).strftime('%d-%m-%Y')
+    return datetime.datetime.fromtimestamp(date).strftime('%Y-%m-%d')
 
 
 for file_name in os.listdir(src):
